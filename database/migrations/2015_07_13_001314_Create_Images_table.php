@@ -15,11 +15,11 @@ class CreateImageTable extends Migration
         Schema::create('images', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned();
-            $table->string('filename');
+            $table->string('file_url');
             $table->string('title');
             $table->text('description');
-            $table->string('video');
-            $table->string('audio');
+            $table->string('video_url');
+            $table->string('audio_url');
             $table->integer('width');
             $table->integer('height');
             $table->enum('status',['active','inactive','deleted']);

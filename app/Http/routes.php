@@ -11,6 +11,8 @@
 |
 */
 
+Route::resource('images','ImagesController');
+
 Route::get('/', function () {
     return view('welcome');
 });
